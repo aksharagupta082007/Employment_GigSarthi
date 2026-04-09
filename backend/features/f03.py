@@ -7,7 +7,7 @@ import statistics
 # ─── Data Helpers ─────────────────────────────────────────────────────────────
 
 def get_base_prices():
-    cleaned_path = "outputs/cleaned_dataset.csv"
+    cleaned_path = "data/cleaned_dataset.csv"
     base_prices = []
     
     if os.path.exists(cleaned_path):

@@ -52,7 +52,7 @@ function Feature15() {
     // eslint-disable-next-line
   }, []);
 
-  const { metrics, charts = [], data = [], logs = [], csv_path } = payload || {};
+  const { metrics_before, metrics_after, charts = [], data = [], logs = [], csv_path } = payload || {};
 
   return (
     <div className="f15-layout">
@@ -67,7 +67,7 @@ function Feature15() {
           <div className="f15-badge">Module 15 / Simulation Engine</div>
           <h1 className="f15-title">What-<span className="f15-gradient-text">If</span> Simulation</h1>
           <p className="f15-subtitle">
-            Inject hypothetical parameters into a 5,000-path Monte Carlo engine. 
+            Compare historical baselines against hypothetical parameters using a 5,000-path Monte Carlo engine. 
             Instantly view risk boundaries and income projections based on shifting market turbulence.
           </p>
         </header>
@@ -75,7 +75,7 @@ function Feature15() {
         {/* Input Parameters Dashboard */}
         <div className="f15-control-panel glass-card">
           <div className="f15-panel-title">
-            <h3>Simulation Parameters</h3>
+            <h3>Simulation Parameters (After Shock)</h3>
             <button 
               className="f15-btn f15-btn-simulate"
               onClick={runSimulation}
@@ -139,24 +139,43 @@ function Feature15() {
         {payload && (
           <div className={`f15-results-block ${loading ? "simulating" : ""}`}>
             
-            {/* KPI Cards */}
-            {metrics && (
-              <div className="f15-metrics-grid">
-                <div className="f15-metric highlight-blue">
-                  <span className="m-label">Mean Expected Yearly</span>
-                  <span className="m-val">${metrics.mean_yearly.toLocaleString()}</span>
-                </div>
-                <div className="f15-metric highlight-green">
-                  <span className="m-label">Best Case (95th %ile)</span>
-                  <span className="m-val">${metrics.best_case.toLocaleString()}</span>
-                </div>
-                <div className="f15-metric highlight-orange">
-                  <span className="m-label">Worst Case (5th %ile)</span>
-                  <span className="m-val">${metrics.worst_case.toLocaleString()}</span>
-                </div>
-                <div className="f15-metric highlight-red">
-                  <span className="m-label">Risk of Bankruptcy (&lt;60%)</span>
-                  <span className="m-val">{metrics.risk_percentage}%</span>
+            {/* KPI Cards Before / After */}
+            {metrics_before && metrics_after && (
+              <div className="f15-comparison-section">
+                <h3 className="comparison-title">Simulation Analysis: Baseline vs Shocked</h3>
+                <div className="f15-metrics-grid">
+                  <div className="f15-metric highlight-blue">
+                    <span className="m-label">Mean Expected Yearly</span>
+                    <div className="m-compare-row">
+                      <span className="m-before">${metrics_before.mean_yearly.toLocaleString()}</span>
+                      <span className="m-icon">➔</span>
+                      <span className="m-val">${metrics_after.mean_yearly.toLocaleString()}</span>
+                    </div>
+                  </div>
+                  <div className="f15-metric highlight-green">
+                    <span className="m-label">Best Case (95th %ile)</span>
+                    <div className="m-compare-row">
+                      <span className="m-before">${metrics_before.best_case.toLocaleString()}</span>
+                      <span className="m-icon">➔</span>
+                      <span className="m-val">${metrics_after.best_case.toLocaleString()}</span>
+                    </div>
+                  </div>
+                  <div className="f15-metric highlight-orange">
+                    <span className="m-label">Worst Case (5th %ile)</span>
+                    <div className="m-compare-row">
+                      <span className="m-before">${metrics_before.worst_case.toLocaleString()}</span>
+                      <span className="m-icon">➔</span>
+                      <span className="m-val">${metrics_after.worst_case.toLocaleString()}</span>
+                    </div>
+                  </div>
+                  <div className="f15-metric highlight-red">
+                    <span className="m-label">Bankruptcy Risk (&lt;60%)</span>
+                    <div className="m-compare-row">
+                      <span className="m-before">{metrics_before.risk_percentage}%</span>
+                      <span className="m-icon">➔</span>
+                      <span className="m-val">{metrics_after.risk_percentage}%</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
@@ -194,18 +213,20 @@ function Feature15() {
                     <thead>
                       <tr>
                         <th>Month</th>
-                        <th>Lower Bounds</th>
-                        <th>Mean Expected</th>
-                        <th>Upper Bounds</th>
+                        <th>Mean Before</th>
+                        <th>Mean After</th>
+                        <th>Difference</th>
                       </tr>
                     </thead>
                     <tbody>
                       {data.map((row, i) => (
                         <tr key={i}>
                           <td>{row.month}</td>
-                          <td className="text-muted">${row.bound_lower.toLocaleString()}</td>
-                          <td className="text-highlight">${row.expected_mean.toLocaleString()}</td>
-                          <td className="text-muted">${row.bound_upper.toLocaleString()}</td>
+                          <td className="text-muted">${row.before_mean.toLocaleString()}</td>
+                          <td className="text-highlight">${row.after_mean.toLocaleString()}</td>
+                          <td className={row.diff >= 0 ? "text-green" : "text-red"}>
+                            {row.diff > 0 ? "+" : ""}{row.diff.toLocaleString()}
+                          </td>
                         </tr>
                       ))}
                     </tbody>

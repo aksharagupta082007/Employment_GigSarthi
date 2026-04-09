@@ -109,7 +109,12 @@ input[type=range].f15-range::-webkit-slider-thumb:hover { transform: scale(1.2);
   display: flex; flex-direction: column; gap: 10px; border: 1px solid rgba(255,255,255,0.04);
 }
 .m-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #94a3b8; }
-.m-val { font-family: 'JetBrains Mono', monospace; font-size: 1.8rem; font-weight: 700; }
+.m-compare-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.m-before { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: #64748b; text-decoration: line-through; }
+.m-icon { color: #f472b6; font-size: 1rem; }
+.m-val { font-family: 'JetBrains Mono', monospace; font-size: 1.8rem; font-weight: 700; color: #f8fafc; }
+
+.comparison-title { margin: 0 0 16px; font-size: 1.25rem; font-weight: 700; color: #cbd5e1; }
 
 .highlight-blue { border-bottom: 3px solid #3b82f6; }
 .highlight-green { border-bottom: 3px solid #10b981; }
