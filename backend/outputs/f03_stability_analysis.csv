@@ -1,0 +1,151 @@
+worker_id,avg_monthly_income,income_variance,workload_variance,stability_category,classification_reason,total_gigs
+W-1000,450.03,7512.05,9.54,Stable,"Index is 19.3% (<20%), indicating highly predictable income.",227
+W-1001,791.48,9653.29,6.63,Stable,"Index is 12.4% (<20%), indicating highly predictable income.",247
+W-1002,236.35,18391.24,84.7,Volatile,"Index is 57.4% (40-70%), pointing to risky and irregular payouts.",182
+W-1003,260.12,40466.88,105.06,Highly Unstable,"Index is 77.3% (>70%), a severe red flag for income consistency.",218
+W-1004,14469.67,6875671.43,13.54,Stable,"Index is 18.1% (<20%), indicating highly predictable income.",253
+W-1005,277.6,1692.93,10.93,Stable,"Index is 14.8% (<20%), indicating highly predictable income.",243
+W-1006,699.54,147811.59,12.61,Volatile,"Index is 55.0% (40-70%), pointing to risky and irregular payouts.",88
+W-1007,1329.82,535663.72,73.88,Volatile,"Index is 55.0% (40-70%), pointing to risky and irregular payouts.",208
+W-1008,173.05,11386.45,79.17,Volatile,"Index is 61.7% (40-70%), pointing to risky and irregular payouts.",187
+W-1009,4100.01,7865577.23,102.33,Volatile,"Index is 68.4% (40-70%), pointing to risky and irregular payouts.",238
+W-1010,6241.31,10855001.35,117.17,Volatile,"Index is 52.8% (40-70%), pointing to risky and irregular payouts.",223
+W-1011,38.78,551.67,7.97,Volatile,"Index is 60.6% (40-70%), pointing to risky and irregular payouts.",62
+W-1012,764.1,260496.67,81.7,Volatile,"Index is 66.8% (40-70%), pointing to risky and irregular payouts.",176
+W-1013,40.88,724.91,14.15,Volatile,"Index is 65.9% (40-70%), pointing to risky and irregular payouts.",70
+W-1014,531.24,67265.59,105.36,Volatile,"Index is 48.8% (40-70%), pointing to risky and irregular payouts.",295
+W-1015,311.42,42736.21,9.72,Volatile,"Index is 66.4% (40-70%), pointing to risky and irregular payouts.",59
+W-1016,5410.87,12373642.44,103.79,Volatile,"Index is 65.0% (40-70%), pointing to risky and irregular payouts.",238
+W-1017,263.16,2289.86,8.7,Stable,"Index is 18.2% (<20%), indicating highly predictable income.",226
+W-1018,4308.78,9872636.05,53.52,Highly Unstable,"Index is 72.9% (>70%), a severe red flag for income consistency.",128
+W-1019,60.32,2598.71,11.79,Highly Unstable,"Index is 84.5% (>70%), a severe red flag for income consistency.",50
+W-1020,719.67,68268.19,39.42,Moderate,"Index is 36.3% (20-40%), showing slight but normal fluctuations.",242
+W-1021,121.75,13843.5,12.75,Highly Unstable,"Index is 96.6% (>70%), a severe red flag for income consistency.",45
+W-1022,324.74,43234.13,64.42,Volatile,"Index is 64.0% (40-70%), pointing to risky and irregular payouts.",212
+W-1023,209.37,942.11,12.63,Stable,"Index is 14.7% (<20%), indicating highly predictable income.",233
+W-1024,490.41,4395.0,9.79,Stable,"Index is 13.5% (<20%), indicating highly predictable income.",242
+W-1025,61320.21,138486758.23,11.33,Stable,"Index is 19.2% (<20%), indicating highly predictable income.",236
+W-1026,1236.97,242546.6,67.24,Moderate,"Index is 39.8% (20-40%), showing slight but normal fluctuations.",286
+W-1027,310.21,40654.98,9.55,Volatile,"Index is 65.0% (40-70%), pointing to risky and irregular payouts.",54
+W-1028,1784.18,938640.99,53.79,Volatile,"Index is 54.3% (40-70%), pointing to risky and irregular payouts.",266
+W-1029,358.26,64378.94,130.33,Highly Unstable,"Index is 70.8% (>70%), a severe red flag for income consistency.",214
+W-1030,4463.12,5774329.25,115.64,Volatile,"Index is 53.8% (40-70%), pointing to risky and irregular payouts.",264
+W-1031,57797.17,969137309.53,139.7,Volatile,"Index is 53.9% (40-70%), pointing to risky and irregular payouts.",268
+W-1032,331.05,2897.02,12.33,Stable,"Index is 16.3% (<20%), indicating highly predictable income.",242
+W-1033,1897.69,123162.17,13.66,Stable,"Index is 18.5% (<20%), indicating highly predictable income.",237
+W-1034,7495.91,22529006.86,88.63,Volatile,"Index is 63.3% (40-70%), pointing to risky and irregular payouts.",217
+W-1035,8358.5,4163076.85,19.55,Moderate,"Index is 24.4% (20-40%), showing slight but normal fluctuations.",246
+W-1036,61088.03,93370013.63,9.72,Stable,"Index is 15.8% (<20%), indicating highly predictable income.",239
+W-1037,102.33,1334.06,5.79,Moderate,"Index is 35.7% (20-40%), showing slight but normal fluctuations.",86
+W-1038,3087.6,3789791.49,136.52,Volatile,"Index is 63.1% (40-70%), pointing to risky and irregular payouts.",238
+W-1039,4126.89,687221.51,6.97,Moderate,"Index is 20.1% (20-40%), showing slight but normal fluctuations.",224
+W-1040,8242.92,1672049.24,7.36,Stable,"Index is 15.7% (<20%), indicating highly predictable income.",241
+W-1041,1461.61,59969.34,8.99,Stable,"Index is 16.8% (<20%), indicating highly predictable income.",229
+W-1042,189.59,1401.78,11.55,Stable,"Index is 19.7% (<20%), indicating highly predictable income.",234
+W-1043,4101.23,571392.17,14.08,Stable,"Index is 18.4% (<20%), indicating highly predictable income.",229
+W-1044,302.03,33485.55,102.2,Volatile,"Index is 60.6% (40-70%), pointing to risky and irregular payouts.",195
+W-1045,340.79,4188.05,12.18,Stable,"Index is 19.0% (<20%), indicating highly predictable income.",240
+W-1046,328.97,4626.52,13.48,Moderate,"Index is 20.7% (20-40%), showing slight but normal fluctuations.",237
+W-1047,280.15,1614.25,7.97,Stable,"Index is 14.3% (<20%), indicating highly predictable income.",238
+W-1048,5385.39,17117936.46,96,Highly Unstable,"Index is 76.8% (>70%), a severe red flag for income consistency.",204
+W-1049,718.63,269193.19,10.91,Highly Unstable,"Index is 72.2% (>70%), a severe red flag for income consistency.",60
+W-1050,3185.73,253436.58,10.93,Stable,"Index is 15.8% (<20%), indicating highly predictable income.",231
+W-1051,5559.57,1143362.16,12.82,Stable,"Index is 19.2% (<20%), indicating highly predictable income.",234
+W-1052,960.86,881028.19,94.93,Highly Unstable,"Index is 97.7% (>70%), a severe red flag for income consistency.",171
+W-1053,3240.75,5912425.65,161.52,Highly Unstable,"Index is 75.0% (>70%), a severe red flag for income consistency.",220
+W-1054,3346.86,239673.0,6.24,Stable,"Index is 14.6% (<20%), indicating highly predictable income.",248
+W-1055,238.24,16921.31,79.79,Volatile,"Index is 54.6% (40-70%), pointing to risky and irregular payouts.",202
+W-1056,1681.76,89234.02,14,Stable,"Index is 17.8% (<20%), indicating highly predictable income.",240
+W-1057,2925.22,2384225.43,89.9,Volatile,"Index is 52.8% (40-70%), pointing to risky and irregular payouts.",227
+W-1058,423.31,5677.75,13.17,Stable,"Index is 17.8% (<20%), indicating highly predictable income.",251
+W-1059,383.38,31013.04,93.91,Volatile,"Index is 45.9% (40-70%), pointing to risky and irregular payouts.",234
+W-1060,1343.31,44562.15,6.63,Stable,"Index is 15.7% (<20%), indicating highly predictable income.",217
+W-1061,763.81,9122.02,6.42,Stable,"Index is 12.5% (<20%), indicating highly predictable income.",260
+W-1062,1833.22,114239.91,10.36,Stable,"Index is 18.4% (<20%), indicating highly predictable income.",240
+W-1063,1366.86,561053.64,110.61,Volatile,"Index is 54.8% (40-70%), pointing to risky and irregular payouts.",236
+W-1064,1669.82,58213.72,8.08,Stable,"Index is 14.4% (<20%), indicating highly predictable income.",271
+W-1065,1190.65,1268040.01,15.88,Highly Unstable,"Index is 94.6% (>70%), a severe red flag for income consistency.",52
+W-1066,314.13,46208.56,114.97,Volatile,"Index is 68.4% (40-70%), pointing to risky and irregular payouts.",176
+W-1067,2567.48,3812344.65,98.08,Highly Unstable,"Index is 76.0% (>70%), a severe red flag for income consistency.",185
+W-1068,84.08,3013.08,10.7,Volatile,"Index is 65.3% (40-70%), pointing to risky and irregular payouts.",62
+W-1069,218.28,19181.49,150.06,Volatile,"Index is 63.5% (40-70%), pointing to risky and irregular payouts.",260
+W-1070,1633.62,434602.2,71.33,Volatile,"Index is 40.4% (40-70%), pointing to risky and irregular payouts.",280
+W-1071,2010.35,173611.03,14,Moderate,"Index is 20.7% (20-40%), showing slight but normal fluctuations.",252
+W-1072,5959.18,10346613.85,86.61,Volatile,"Index is 54.0% (40-70%), pointing to risky and irregular payouts.",232
+W-1073,707.12,15778.64,9.54,Stable,"Index is 17.8% (<20%), indicating highly predictable income.",239
+W-1074,1094.99,372626.53,46.52,Volatile,"Index is 55.7% (40-70%), pointing to risky and irregular payouts.",178
+W-1075,3947.37,5496084.85,134.99,Volatile,"Index is 59.4% (40-70%), pointing to risky and irregular payouts.",277
+W-1076,72.89,1338.45,10.81,Volatile,"Index is 50.2% (40-70%), pointing to risky and irregular payouts.",71
+W-1077,197.22,11575.56,77.42,Volatile,"Index is 54.6% (40-70%), pointing to risky and irregular payouts.",218
+W-1078,889.79,238755.78,111.55,Volatile,"Index is 54.9% (40-70%), pointing to risky and irregular payouts.",258
+W-1079,1593.03,670359.36,7.3,Volatile,"Index is 51.4% (40-70%), pointing to risky and irregular payouts.",63
+W-1080,262.1,34062.48,88.2,Highly Unstable,"Index is 70.4% (>70%), a severe red flag for income consistency.",183
+W-1081,65.32,1148.05,6.06,Volatile,"Index is 51.9% (40-70%), pointing to risky and irregular payouts.",68
+W-1082,1889.56,124228.27,10.99,Stable,"Index is 18.7% (<20%), indicating highly predictable income.",247
+W-1083,3472.49,400787.2,10.2,Stable,"Index is 18.2% (<20%), indicating highly predictable income.",231
+W-1084,286.14,30957.53,63.84,Volatile,"Index is 61.5% (40-70%), pointing to risky and irregular payouts.",225
+W-1085,90.26,1873.82,9.36,Volatile,"Index is 48.0% (40-70%), pointing to risky and irregular payouts.",78
+W-1086,95.57,1944.21,4.08,Volatile,"Index is 46.1% (40-70%), pointing to risky and irregular payouts.",73
+W-1087,2115.45,1055516.16,9.36,Volatile,"Index is 48.6% (40-70%), pointing to risky and irregular payouts.",77
+W-1088,413.58,6523.22,11.18,Stable,"Index is 19.5% (<20%), indicating highly predictable income.",246
+W-1089,3905.63,484927.35,10.97,Stable,"Index is 17.8% (<20%), indicating highly predictable income.",256
+W-1090,203.01,575.43,6.93,Stable,"Index is 11.8% (<20%), indicating highly predictable income.",249
+W-1091,911.46,218707.28,90.06,Volatile,"Index is 51.3% (40-70%), pointing to risky and irregular payouts.",284
+W-1092,198.11,21646.81,116.99,Highly Unstable,"Index is 74.3% (>70%), a severe red flag for income consistency.",235
+W-1093,200.35,994.72,10.79,Stable,"Index is 15.7% (<20%), indicating highly predictable income.",244
+W-1094,1719.35,927904.53,120.97,Volatile,"Index is 56.0% (40-70%), pointing to risky and irregular payouts.",220
+W-1095,3822.33,7048337.86,81.9,Volatile,"Index is 69.5% (40-70%), pointing to risky and irregular payouts.",181
+W-1096,469.99,40153.0,32.33,Volatile,"Index is 42.6% (40-70%), pointing to risky and irregular payouts.",298
+W-1097,190.31,1095.15,9.54,Stable,"Index is 17.4% (<20%), indicating highly predictable income.",227
+W-1098,434.91,2930.53,6.33,Stable,"Index is 12.4% (<20%), indicating highly predictable income.",262
+W-1099,1459.53,45851.58,11.36,Stable,"Index is 14.7% (<20%), indicating highly predictable income.",234
+W-1100,7039.19,1112638.31,7.09,Stable,"Index is 15.0% (<20%), indicating highly predictable income.",252
+W-1101,289.16,2596.78,9.84,Stable,"Index is 17.6% (<20%), indicating highly predictable income.",243
+W-1102,12078.84,3156697.53,7.17,Stable,"Index is 14.7% (<20%), indicating highly predictable income.",227
+W-1103,4380.15,610344.83,8.79,Stable,"Index is 17.8% (<20%), indicating highly predictable income.",224
+W-1104,3081.26,271965.92,10.61,Stable,"Index is 16.9% (<20%), indicating highly predictable income.",236
+W-1105,734.62,206452.45,121.72,Volatile,"Index is 61.9% (40-70%), pointing to risky and irregular payouts.",247
+W-1106,8319.31,2457236.58,12.06,Stable,"Index is 18.8% (<20%), indicating highly predictable income.",248
+W-1107,545.13,8194.56,10.08,Stable,"Index is 16.6% (<20%), indicating highly predictable income.",259
+W-1108,58.63,2317.85,11.36,Highly Unstable,"Index is 82.1% (>70%), a severe red flag for income consistency.",49
+W-1109,376.44,21260.04,6.93,Moderate,"Index is 38.7% (20-40%), showing slight but normal fluctuations.",75
+W-1110,31.16,1222.5,7.17,Highly Unstable,"Index is 112.2% (>70%), a severe red flag for income consistency.",31
+W-1111,1669.72,76596.6,7.72,Stable,"Index is 16.6% (<20%), indicating highly predictable income.",245
+W-1112,3323.36,2920697.61,36.45,Volatile,"Index is 51.4% (40-70%), pointing to risky and irregular payouts.",209
+W-1113,448.52,104680.68,111.55,Highly Unstable,"Index is 72.1% (>70%), a severe red flag for income consistency.",222
+W-1114,320.28,57871.48,176.27,Highly Unstable,"Index is 75.1% (>70%), a severe red flag for income consistency.",209
+W-1115,64.66,1554.52,12.45,Volatile,"Index is 61.0% (40-70%), pointing to risky and irregular payouts.",73
+W-1116,135.18,10130.86,110.61,Highly Unstable,"Index is 74.5% (>70%), a severe red flag for income consistency.",184
+W-1117,323.34,3700.39,13.36,Stable,"Index is 18.8% (<20%), indicating highly predictable income.",251
+W-1118,214.2,1058.31,8.93,Stable,"Index is 15.2% (<20%), indicating highly predictable income.",255
+W-1119,3337.01,3198216.1,62.63,Volatile,"Index is 53.6% (40-70%), pointing to risky and irregular payouts.",259
+W-1120,10627.94,58969655.89,119.54,Highly Unstable,"Index is 72.3% (>70%), a severe red flag for income consistency.",215
+W-1121,88.19,3594.13,14.7,Volatile,"Index is 68.0% (40-70%), pointing to risky and irregular payouts.",70
+W-1122,1373.22,333183.02,58,Volatile,"Index is 42.0% (40-70%), pointing to risky and irregular payouts.",192
+W-1123,2094.39,2245407.52,120.61,Highly Unstable,"Index is 71.5% (>70%), a severe red flag for income consistency.",208
+W-1124,1359.99,1086936.59,100.55,Highly Unstable,"Index is 76.7% (>70%), a severe red flag for income consistency.",192
+W-1125,2699.89,261957.8,13.17,Stable,"Index is 19.0% (<20%), indicating highly predictable income.",239
+W-1126,1811.29,95864.92,9.54,Stable,"Index is 17.1% (<20%), indicating highly predictable income.",229
+W-1127,691.44,240693.51,91.72,Highly Unstable,"Index is 71.0% (>70%), a severe red flag for income consistency.",181
+W-1128,1251.67,823709.95,14.27,Highly Unstable,"Index is 72.5% (>70%), a severe red flag for income consistency.",61
+W-1129,6583.27,12859849.51,69.72,Volatile,"Index is 54.5% (40-70%), pointing to risky and irregular payouts.",271
+W-1130,2675.84,1259733.04,91.84,Volatile,"Index is 41.9% (40-70%), pointing to risky and irregular payouts.",201
+W-1131,3153.26,285482.31,9.36,Stable,"Index is 16.9% (<20%), indicating highly predictable income.",233
+W-1132,301.49,2946.08,8.81,Stable,"Index is 18.0% (<20%), indicating highly predictable income.",211
+W-1133,315.12,45165.12,85.9,Volatile,"Index is 67.4% (40-70%), pointing to risky and irregular payouts.",199
+W-1134,1786.92,1189223.21,130.88,Volatile,"Index is 61.0% (40-70%), pointing to risky and irregular payouts.",262
+W-1135,451.44,161151.72,17.52,Highly Unstable,"Index is 88.9% (>70%), a severe red flag for income consistency.",56
+W-1136,169.57,19952.38,82.33,Highly Unstable,"Index is 83.3% (>70%), a severe red flag for income consistency.",182
+W-1137,903.68,203131.92,76.81,Volatile,"Index is 49.9% (40-70%), pointing to risky and irregular payouts.",251
+W-1138,8032.28,31928820.22,120.99,Highly Unstable,"Index is 70.3% (>70%), a severe red flag for income consistency.",217
+W-1139,611.8,164795.81,53.36,Volatile,"Index is 66.4% (40-70%), pointing to risky and irregular payouts.",173
+W-1140,4540.19,659263.96,6.52,Stable,"Index is 17.9% (<20%), indicating highly predictable income.",250
+W-1141,696.98,270320.89,12.63,Highly Unstable,"Index is 74.6% (>70%), a severe red flag for income consistency.",59
+W-1142,6113.02,14186575.92,157.72,Volatile,"Index is 61.6% (40-70%), pointing to risky and irregular payouts.",235
+W-1143,439.13,96994.71,127.79,Highly Unstable,"Index is 70.9% (>70%), a severe red flag for income consistency.",238
+W-1144,3621.05,4827272.82,114.55,Volatile,"Index is 60.7% (40-70%), pointing to risky and irregular payouts.",228
+W-1145,480.7,66804.59,97.36,Volatile,"Index is 53.8% (40-70%), pointing to risky and irregular payouts.",245
+W-1146,356.51,2958.71,8.99,Stable,"Index is 15.3% (<20%), indicating highly predictable income.",245
+W-1147,392.35,59408.98,12.73,Volatile,"Index is 62.1% (40-70%), pointing to risky and irregular payouts.",72
+W-1148,2588.06,3283862.72,85.84,Highly Unstable,"Index is 70.0% (>70%), a severe red flag for income consistency.",195
+W-1149,1598.75,53542.03,6.82,Stable,"Index is 14.5% (<20%), indicating highly predictable income.",258
