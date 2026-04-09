@@ -67,10 +67,18 @@ def generate_worker_history(num_workers, base_prices, months=12):
         stdev_income = statistics.stdev(income_history) if len(income_history) > 1 else 0
         volatility_index = (stdev_income / mean_income * 100) if mean_income > 0 else 0
         
-        if volatility_index < 20: stability_category = "Stable"
-        elif volatility_index < 40: stability_category = "Moderate"
-        elif volatility_index < 70: stability_category = "Volatile"
-        else: stability_category = "Highly Unstable"
+        if volatility_index < 20: 
+            stability_category = "Stable"
+            classification_reason = f"Index is {volatility_index:.1f}% (<20%), indicating highly predictable income."
+        elif volatility_index < 40: 
+            stability_category = "Moderate"
+            classification_reason = f"Index is {volatility_index:.1f}% (20-40%), showing slight but normal fluctuations."
+        elif volatility_index < 70: 
+            stability_category = "Volatile"
+            classification_reason = f"Index is {volatility_index:.1f}% (40-70%), pointing to risky and irregular payouts."
+        else: 
+            stability_category = "Highly Unstable"
+            classification_reason = f"Index is {volatility_index:.1f}% (>70%), a severe red flag for income consistency."
 
         workers.append({
             "worker_id": f"W-{1000 + i}",
@@ -80,6 +88,7 @@ def generate_worker_history(num_workers, base_prices, months=12):
             "workload_variance": round(workload_var, 2),
             "volatility_index": round(volatility_index, 2),
             "stability_category": stability_category,
+            "classification_reason": classification_reason,
             "total_gigs": total_gigs,
             "income_history": income_history,
             "workload_history": workload_history
@@ -227,11 +236,17 @@ def run_stability_analysis():
         
     logs.append(f"Global behavior derived: {market_behavior}")
     
+    income_var_reasoning = f"High variance indicates severe payload swings month-to-month. The current value ({avg_income_var:.2f}) signifies notable financial unpredictability." if avg_income_var > 300000 else f"Low variance indicates smooth monthly earnings. Current value ({avg_income_var:.2f}) shows predictable payouts."
+    
+    workload_var_reasoning = f"A variance above 50 is a severe red flag indicating highly volatile job volume." if avg_workload_var > 50 else f"Demonstrates healthy gig consistency. The value of {avg_workload_var:.2f} dictates steady worker demand."
+
     analysis_report = {
         "global_market_behavior": market_behavior,
         "stability_report_text": report_text,
         "avg_income_variance": round(avg_income_var, 2),
-        "avg_workload_variance": round(avg_workload_var, 2)
+        "income_variance_reasoning": income_var_reasoning,
+        "avg_workload_variance": round(avg_workload_var, 2),
+        "workload_variance_reasoning": workload_var_reasoning
     }
     
     os.makedirs("outputs", exist_ok=True)
@@ -246,7 +261,7 @@ def run_stability_analysis():
         logs.append("Matplotlib error, skipping charts.")
         
     csv_path = "outputs/f03_stability_analysis.csv"
-    keys = ["worker_id", "avg_monthly_income", "income_variance", "workload_variance", "stability_category", "total_gigs"]
+    keys = ["worker_id", "avg_monthly_income", "income_variance", "workload_variance", "stability_category", "classification_reason", "total_gigs"]
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=keys, extrasaction="ignore")
         writer.writeheader()

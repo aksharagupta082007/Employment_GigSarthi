@@ -5,13 +5,18 @@ const API = "http://localhost:5000/api/features/03";
 
 // ── Components ───────────────────────────────────────────────────────────────
 
-const MetricCard = ({ title, value, icon, accentColor }) => (
+const MetricCard = ({ title, value, icon, accentColor, reasoning }) => (
   <div className="f03-metric-card" style={{ borderBottomColor: accentColor }}>
     <div className="f03-metric-header">
       <span className="f03-metric-icon">{icon}</span>
       <h4 className="f03-metric-title">{title}</h4>
     </div>
     <div className="f03-metric-value">{value}</div>
+    {reasoning && (
+      <div className="f03-metric-reasoning">
+        <strong>Insights:</strong> {reasoning}
+      </div>
+    )}
   </div>
 );
 
@@ -99,12 +104,14 @@ function Feature03() {
                 value={report.avg_income_variance} 
                 icon="💸" 
                 accentColor="#c084fc"
+                reasoning={report.income_variance_reasoning}
               />
               <MetricCard 
                 title="Avg Workload Variance" 
                 value={report.avg_workload_variance} 
                 icon="📦" 
                 accentColor="#f472b6"
+                reasoning={report.workload_variance_reasoning}
               />
             </div>
 
@@ -168,6 +175,7 @@ function Feature03() {
                         <th>Income Var</th>
                         <th>Workload Var</th>
                         <th>Status</th>
+                        <th>Reasoning</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -182,6 +190,7 @@ function Feature03() {
                               {row.stability_category}
                             </span>
                           </td>
+                          <td className="f03-reason-cell">{row.classification_reason}</td>
                         </tr>
                       ))}
                     </tbody>
