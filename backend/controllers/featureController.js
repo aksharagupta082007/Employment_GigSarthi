@@ -7,7 +7,7 @@ export const runFeature = async (req, res) => {
     const result = await executeFeature(featureId);
     const parsed = JSON.parse(result);
     res.json(parsed);
-    
+
   } catch (err) {
     res.status(500).send("Error running feature");
   }
